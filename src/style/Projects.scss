@@ -1,0 +1,81 @@
+@import "colors";
+
+.projects{
+    display: flex;
+    flex-direction: column;
+    padding: 5vmax;
+     padding-bottom: 0;
+
+    >div:nth-child(1){
+
+        width: 100px;
+        height: 120px;
+        background-color: $second-color;
+        // justify-content: center;
+        align-self: center;
+        margin-left: -10vmax;
+        
+
+    }
+
+    .project{
+        display: flex;
+        margin-bottom: 3vmax;
+        // justify-content: space-between;
+
+        .project--image{
+            display: flex;
+           
+            height: 90vh;
+            width: 60vw;
+          
+
+           >img{
+            width: 30vmax;
+            height: 40vmax;
+            margin-left: 6.9vmax;
+
+            object-fit: contain;
+             transition: all 0.5s;
+            &:hover{
+                box-shadow: 8px 8px 18px rgba(53,53,53,0.363);
+            }
+           }
+        }
+
+       .project--detail{
+        display: flex;
+        flex-direction: column;
+         justify-content: center;
+        align-items: flex-start;
+        margin-bottom: 4vmax;
+        margin-left: -10vmax;
+        font-family: $text1;
+
+        >div{
+            margin: 2vmax;
+            font-family: inherit;
+            >span{
+                font-size: 40px;
+                font-weight: 700;
+                color: $second-color;
+            }
+            >p{
+                text-transform: uppercase;
+                font-size: .8vmax;
+                font-weight: 500;
+                padding-bottom: 2vmax;
+            }
+            >div{
+                background-color:$third-color ;
+                height: 2px;
+                width: 3vw;
+                
+            }
+        }
+
+
+        
+       } 
+    }
+}

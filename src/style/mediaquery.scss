@@ -1,0 +1,44 @@
+@media screen and (max-width:950px){
+    nav{
+        >div{
+            display: none;
+        }
+        >main{
+            width: 100%;
+        }
+    }
+
+    .home--image{
+        width: 400px;
+        height: 400px;
+
+    }
+
+    .home--text{
+        h1{
+            font-size: .8vmax;
+        }
+    }
+
+    .about{
+      img{
+        width: 400px;
+        height: 400px;
+      }
+
+    }
+
+    .projects{
+        .project--image{
+            width: 40%;
+            margin-right: 0;
+            
+        }
+        .project--detail{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+    }
+}

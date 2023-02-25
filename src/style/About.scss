@@ -1,0 +1,57 @@
+@import 'colors';
+
+.about{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    margin: 2vmax 0;
+    font-family:$text1;
+    color: $text-color;
+
+    .about-text{
+       display: flex;
+       flex-direction: column;
+       width: 60%;
+       margin:  auto;
+
+       >h2{
+        text-transform: uppercase;
+        margin-bottom: 2vmax;
+        
+
+       }
+       >p{
+        font-size: .9vmax;
+        font-weight: 400;
+        margin-bottom: 2vmax;
+        font-family: $text1;
+       }
+       >button{
+        width: fit-content;
+        margin: 0 auto;
+        border: none;
+        background-color: transparent;
+        color: inherit;
+        text-decoration: none;
+        cursor: pointer;
+        border-bottom: 1px solid $text-color;
+        padding-bottom: 3px;
+
+        &:hover{
+            color: $second-color;
+            box-shadow: 8px 8px 18px rgba(53,53,53,0.363);
+        }
+
+       }
+
+    }
+   
+    .about-img{
+      display: flex;
+
+      img{
+        flex-basis: 75%;
+        margin-left: 20%;
+      }
+    }
+
+}

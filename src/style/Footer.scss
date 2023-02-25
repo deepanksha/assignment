@@ -1,0 +1,74 @@
+@import "colors";
+
+.footer{
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr 3fr;
+    border-top: 1px solid $text-color;
+    color: $third-color;
+    font-weight: 300;
+    
+    padding: 4vmax;
+    border-bottom: 1px solid $text-color;
+
+
+    >div{
+        margin: 1vmax;
+        display: flex;
+        flex-direction: column;
+
+       p{
+        font-size: .8vmax;
+        font-weight: 400;
+       }
+    }
+
+    >div:nth-child(1){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >img{
+            scale: 1.5;
+        }
+    }
+
+    >div:nth-child(2){
+      justify-content: space-between;
+
+      h5{
+        padding-bottom: .5rem;
+      }
+     >div>div{
+       background-color: $third-color; 
+       height: 1px;
+       width: 2vw;
+       
+
+     }
+     p{
+        padding-bottom: .5vmax;
+        padding-top: .5vmax;
+     }
+    }
+
+    >div:nth-child(3){
+        justify-content: space-between;
+
+       >div> p{
+            margin: 1vmax 0;
+        }
+      }
+
+      >div:nth-child(4){
+        // justify-content: space-between;
+
+        h5{
+            padding-bottom: .5rem;
+          }
+
+          >div{
+            margin-bottom: 1vmax;
+          }
+
+      }
+}

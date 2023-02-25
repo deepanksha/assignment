@@ -1,0 +1,74 @@
+@import"colors";
+
+.home{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom: 5vmax;
+
+    >div{
+        display: flex;
+        margin: 3vmax 4vmax;
+    }
+
+    .home--text{
+        display: flex;
+        flex-direction: column;
+        
+
+        >div>h1{
+         text-transform: uppercase;
+         font-size: 3.7vmax;
+         font-weight: 400;
+         color: $third-color;
+         margin-top: 9vmax;
+         margin-bottom: 1vmax;
+        }
+
+        >div:nth-child(1)>p{
+            color: $second-color;
+            font-size: .8vmax;
+            font-weight: 500;
+            text-transform: uppercase;
+            margin-bottom: 2vmax;
+        }
+
+        .right{
+            width: 21vmax;
+          margin-left: 10vmax;
+          font-weight: 500;
+          color: $text-color;
+
+          >p{
+           margin-bottom: 3vmax;
+           font-size: .9vmax;
+           color: inherit;
+          }
+          >button{
+            width: fit-content;
+            text-transform: uppercase;
+            border: none;
+            background-color: transparent;
+            color: inherit;
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 1.5px solid $text-color;
+            padding-bottom: 4px;
+            font-size: 1vmax;
+            transition: all 0.5s;
+    
+            &:hover{
+                color: $second-color;
+                box-shadow: 8px 8px 18px rgba(53,53,53,0.363);
+            }
+    
+           }
+            
+        }
+    }
+}
+
+
+
+
+
+
